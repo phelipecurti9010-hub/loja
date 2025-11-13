@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            background-color: #444;
+            padding: 10px;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .produto-card {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .produto-card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        a.voltar {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 15px;
+            text-decoration: none;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 10px;
+            background: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+
+<header>
+    <h1>Catálogo</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="quemsomos.html">Quem Somos</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="sac.html">SAC</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="admin.html">Administração</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+
+    <div class="produto-card">
+        <h2>Nome do Produto 1</h2>
+        <img src="img/produto1.jpg" alt="Produto 1">
+        <p>Descrição básica do produto 1.</p>
+    </div>
+
+    <div class="produto-card">
+        <h2>Nome do Produto 2</h2>
+        <img src="img/produto2.jpg" alt="Produto 2">
+        <p>Descrição básica do produto 2.</p>
+    </div>
+
+    <a class="voltar" href="index.html">Voltar</a>
+
+</div>
+
+<footer>
+    <p>&copy; 2025 - Todos os direitos reservados</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>SAC</title>
+
+  <!-- CSS PADRONIZADO E ORGANIZADO -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      background-color: #444;
+      padding: 10px;
+      margin: 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="submit"] {
+      background-color: #333;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 20px;
+      padding: 12px;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>SAC</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="quemsomos.html">Quem Somos</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      <li><a href="sac.html">SAC</a></li>
+      <li><a href="catalogo.html">Catálogo</a></li>
+      <li><a href="admin.html">Administração</a></li>
+    </ul>
+  </nav>
+
+  <div class="form-container">
+    <form action="/action_page.php" method="post">
+
+      <label for="tipo">Tipo:</label>
+      <select name="tipo" id="tipo">
+        <option value="elogio">Elogio</option>
+        <option value="reclamacao">Reclamação</option>
+        <option value="sugestao">Sugestão</option>
+        <option value="suporte">Suporte</option>
+      </select>
+
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome">
+
+      <label for="descricao">Descrição:</label>
+      <textarea id="descricao" name="descricao" rows="4" placeholder="Digite sua mensagem..."></textarea>
+
+      <input type="submit" value="Enviar">
+
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 - Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>
